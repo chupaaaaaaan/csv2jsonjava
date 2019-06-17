@@ -1,6 +1,6 @@
 {"index":{"_index":"test"}}
-{"userId":"1","username":"Taro","comment":"よろしくお願いします"}
+{"userId":"1","username":"Taro","comment":"Hello"}
 {"index":{"_index":"test"}}
-{"userId":"2","username":"Jiro","comment":"おはようございます"}
+{"userId":"2","username":"Jiro","comment":"Good morning"}
 {"index":{"_index":"test"}}
-{"userId":"3","username":"Saburo","comment":"こんにちは"}
+{"userId":"3","username":"Saburo","comment":"Good afternoon."}

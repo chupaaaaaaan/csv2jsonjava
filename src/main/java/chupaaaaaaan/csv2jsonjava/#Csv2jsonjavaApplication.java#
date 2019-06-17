@@ -33,14 +33,14 @@ public class Csv2jsonjavaApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         String actionAndMetadata = "{\"index\":{\"_index\":\"test\"}}\n";
-        CsvSchema schema = csvMapper.schemaFor(SampleCsv.class);
+        // CsvSchema schema = csvMapper.schemaFor(SampleCsv.class);
 
         try(FileInputStream csvFile = new FileInputStream("test.csv");
             FileOutputStream jsonFile = new FileOutputStream("test.json")) {
 
             MappingIterator<SampleCsv> rows = csvMapper
                 .readerFor(SampleCsv.class)
-                .with(schema)
+                // .with(schema)
                 .readValues(csvFile);
 
             rows.readAll().stream().forEach(row -> {
